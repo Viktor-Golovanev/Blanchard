@@ -15,14 +15,3 @@ function checkBoxChecked (checkBox) {
     }
 }
 checkBoxChecked(checkBox);
-
-function setBtnValue(){if(window.screen.width < 767) {
-    const btn = document.getElementById('contactsBtn');
-    if(btn.hasAttribute('value')) {
-        btn.setAttribute('value', "Заказать")
-    }  else {
-        btn.setAttribute('value', "Заказать обратный звонок")
-    }
-}}
-
-setBtnValue();
