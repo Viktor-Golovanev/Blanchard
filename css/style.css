@@ -1,19 +1,33 @@
 @font-face {
-	font-family: 'OpenSans';
+	font-family: 'Open Sans';
 	src: local('OpenSans'), 
         url('../fonts/OpenSans-Regular.woff2'), format('woff2'), 
         url('../fonts/OpenSans-Regular.woff'), format('woff');
 	font-weight: 400;
 }
 
+@font-face {
+	font-family: 'Open Sans';
+	src: local('OpenSans'), 
+    url('../fonts/OpenSans-Bold.woff2'), format('woff2'), 
+    url('../fonts/OpenSans-Bold.woff'), format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: local('OpenSans'), 
+    url('../fonts/OpenSans-SemiBold.woff2'), format('woff2'), 
+    url('../fonts/OpenSans-SemiBold.woff'), format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
 img {
     display: inline-block;
     height: auto;
 }
-
-/* section {
-    align-items: center;
-} */
 
 :root {
     --main-bg: #fff;
@@ -33,7 +47,7 @@ img {
 }
 
 body {
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Open Sans', 'sans-serif';
     font-size: 16px;
     font-weight: 400;
     color: var(--main-text-color);
@@ -101,7 +115,7 @@ body {
     justify-content: flex-start;
     margin-left: 56px;
     width: 100%;
-    gap: 100px;
+    gap: 96px;
 }
 
 .header__nav__item {
@@ -176,7 +190,6 @@ body {
     font-size: 72px;
     font-weight: 700;
     line-height: 68px;
-    letter-spacing: 0.05em;
     color: var(--last-text-color);
 }
 
@@ -185,7 +198,6 @@ body {
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
-    letter-spacing: 1px;
     color: var(--last-text-color);
 }
 
@@ -394,7 +406,6 @@ body {
 .catalog__item__title {
     margin-bottom: 6px;
     line-height: 42px;
-    letter-spacing: 0.03em;
 }
 
 .artist__years__life {
@@ -640,13 +651,21 @@ body {
 }
 
 .contacts__button {
-    padding: 9px 43px 9px 24px;
+    padding: 9px 30px 9px 30px;
     max-width: 329px;
     width: 100%;
     min-height: 50px;
-    border: 3px solid #9D5CD0;
+    font-size: 18px;
+    font-weight: 700;
     color: #9D5CD0;
+    border: 3px solid #9D5CD0;
     transition: background-color 0.3s, outline 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.button__text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .contacts__button:focus {
@@ -672,7 +691,6 @@ body {
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
-    letter-spacing: 0.03em;
 }
 
 .contacts__link {

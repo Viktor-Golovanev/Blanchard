@@ -157,7 +157,7 @@
     }
 
     .event__dscr {
-        margin-bottom: 36px;
+        margin-bottom: 56px;
     }
 
     .event__link {
@@ -240,9 +240,13 @@
 }
 
 @media(max-width: 1023px) {
+    .header {
+        padding: 32px 0 25px 0;
+    }
+
     .header__nav__list {
         display: flex;
-        gap: 48px;
+        gap: 45px;
     }
     
     /* hiro */
@@ -255,7 +259,7 @@
 
     .hiro__content {
         justify-content: flex-start;
-        max-width: 662px;
+        max-width: 556px;
         min-height: 483px;
     }
 
@@ -333,6 +337,7 @@
     }
 
     .event__content {
+        padding: 11px 34px 23px 34px;
         max-width: 668px;
         min-height: 330px;
     }
@@ -345,7 +350,7 @@
 
     .projects {
         justify-content: normal;
-        padding: 80px 0 80px 0;
+        padding: 82px 0 80px 0
     }
 
     .projects__dscr {
@@ -381,9 +386,13 @@
         margin-bottom: 6px;
     }
 
+    .contacts__item--adres {
+        font-size: 14px;
+    }
+
     .contacts__list {
         justify-content: center;
-        min-height: 394px;
+        min-height: 393px;
         gap: 25px;
     }
 
@@ -399,6 +408,7 @@
     }
 
     .contacts__button {
+        padding: 9px 25px 9px 25px;
         max-width: 317px;
     }
 
@@ -426,7 +436,6 @@
         font-size: 32px;
         font-weight: 700;
         line-height: 28px;
-        letter-spacing: 0.05em;
         color: var(--last-text-color);
     }
 
@@ -446,6 +455,9 @@
     }
 
     .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin: 0 15px;
     }
 
@@ -453,12 +465,17 @@
 
     .header {
         padding-top: 6px;
-        padding-bottom: 16px;
+        padding-bottom: 12px;
     }
 
     .header__container {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 0 15px;
         min-height: 50px;
         height: 100%;
+        gap: 3px;
     }
 
     .header__logo {
@@ -474,7 +491,7 @@
     }
 
     .header__nav__list {
-        max-width: 290px;
+        /* max-width: 290px; */
         gap: 28px;
     }
 
@@ -484,8 +501,8 @@
     }
 
     .header__search {
-        top: 7px;
-        right: 0;
+        top: 8px;
+        right: 15px;
         margin: 0;
         width: 17px;
     }
@@ -493,7 +510,7 @@
     /* hiro */
     .hiro {
         padding-top: 50px;
-        padding-bottom: 49px;
+        padding-bottom: 50px;
     }
 
     .hiro__dscr {
@@ -560,12 +577,6 @@
     .gallery__exemple {
         gap: 30px;
     }
-
-    /* .gallery__content {
-        padding: 0;
-        margin-bottom: 15px;
-        padding-top: 17px;
-    } */
 
     .gallery__title {
         padding: 0;
@@ -638,6 +649,7 @@
     .catalog__item__title {
         margin-bottom: 10px;
         line-height: 33px;
+        letter-spacing: 0.01em;
     }
 
     .artist__years__life {
@@ -657,13 +669,16 @@
         padding-top: 26px;
     }
 
+    .event .container {
+        align-items: flex-start;
+    }
+
     .event__title {
         margin-bottom: 14px;
     }
 
     .event__content {
         padding: 17px 15px 15px 22px;
-        min-height: 483px;
     }
 
     .event__list {
@@ -681,6 +696,7 @@
 
     .event__dscr {
         font-size: 16px;
+        margin-bottom: 112px;
     }
 
     .event__link {
@@ -795,6 +811,11 @@
         padding: 9px 30px 9px 30px;
         max-width: 130px;
         min-height: 40px;
+        font-size: 12px;
+    }
+
+    .contacts__button span {
+        display: none;
     }
 
     .contacts__item__text {
