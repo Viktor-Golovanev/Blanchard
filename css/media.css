@@ -1,4 +1,4 @@
-@media(max-width: 1366px) {
+@media(max-width: 1560px) {
     .header {
         padding: 32px 0 26px 0;
     }
@@ -125,8 +125,9 @@
     }
 
     .event__img {
-        max-width: 290px;
+        width: 100%;
         min-height: 200px;
+        background-size: cover;
     }
 
     .event__img-car1 {
@@ -310,7 +311,6 @@
     }
 
     .event__item {
-        max-width: 668px;
         min-height: 533px;
     }
 
@@ -318,11 +318,6 @@
         margin-bottom: 23px;
     }
 
-    .event__img {
-        max-width: 668px;
-        min-height: 200px;
-    }
-    
     .event__img-car1 {
         background-image: url('../img/event-card1-m.png');
         background-repeat: no-repeat;
@@ -706,10 +701,6 @@
 
     .event__link p {
         font-size: 16px;
-    }
-
-    .event__img {
-        background-size: cover;
     }
 
     .event__img-car1 {
